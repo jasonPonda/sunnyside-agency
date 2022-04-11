@@ -8,7 +8,7 @@
 
 ##### The mission
 
-![the preview, desktop](/sunnyside-agency/images/desktop-preview.jpg)
+![the preview](/sunnyside-agency/images/desktop-preview.jpg)
 
 implement a design for a newly created agency.
 
