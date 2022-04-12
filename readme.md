@@ -12,5 +12,7 @@
 
 implement a design for a newly created agency.
 
+- The desktop design end product should match this image
+- The mobile design end product should match this image
 
 

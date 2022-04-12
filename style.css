@@ -1,0 +1,375 @@
+@import url(https://fonts.google.com/specimen/Barlow);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+@media (min-width: 600px) {
+    body{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+body {
+
+    width: 1440px;
+    margin: auto 0px;
+    font-size: 18px;
+}
+
+.header {
+    background-image: url(/sunnyside-agency/resources/images/photos/image-header.jpg);
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1352px;
+    height: 56px;
+    left: 40px;
+    top: 34px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 3em;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact {
+    border: none;
+    border-radius: 28px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+}
+
+.contact:hover {
+    opacity: 0.9;
+}
+
+h1 {
+    position: absolute;
+    width: 750px;
+    height: 69px;
+    left: 344.5px;
+    top: 195px;
+
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.double {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+}
+
+.double h2,
+h3 {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+
+    color: #24303E;
+}
+
+.double a {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #24303E;
+}
+
+.double a:hover {
+    background: #FAD400;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border-radius: 28px;
+}
+
+.part1 {
+    grid-template-areas:
+        ". a  a ."
+        ". a  a .";
+    align-content: flex-start;
+    align-self: center;
+    justify-self: center;
+    width: 445px;
+    height: 285px;
+    left: 165px;
+    top: 958px;
+}
+
+.part1 p,
+.audience p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: -0.128571px;
+
+    color: #808397;
+}
+
+
+.oeuf {
+    width: 720px;
+    height: 600px;
+    left: 720px;
+    top: 800px;
+    background-image: url(/sunnyside-agency/resources/images/photos/image-transform.jpg);
+    background-repeat: no-repeat;
+}
+
+.tasse {
+    width: 720px;
+    height: 600px;
+    left: 0px;
+    top: 1400px;
+    background-image: url(/sunnyside-agency/resources/images/photos/image-stand-out.jpg);
+    background-repeat: no-repeat;
+}
+
+.audience {
+    height: 445px;
+    left: 830px;
+    top: 1557px;
+}
+
+.graphic {
+    width: 720px;
+    height: 600px;
+    left: 0px;
+    top: 1400px;
+    background-image: url(/sunnyside-agency/resources/images/photos/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.graphic h3,
+.photography h3 {
+    height: 35px;
+    left: 17.4px;
+    right: 17.4%;
+    top: 60%;
+
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+
+    letter-spacing: -0.2px;
+
+    color: #24554A;
+}
+
+.graphic p,
+.photography p {
+    width: 339px;
+    height: 143px;
+    left: 191px;
+    top: 2398px;
+
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+
+
+    letter-spacing: -0.114286px;
+
+    color: #3E7467;
+}
+
+.graph {
+    grid-template-areas:
+        ". a  a ."
+        ". a  a .";
+    align-content: flex-start;
+    align-self: center;
+    justify-self: center;
+    width: 445px;
+    height: 285px;
+    left: 165px;
+    top: 958px;
+}
+
+.photography {
+    width: 720px;
+    height: 600px;
+    left: 720px;
+    top: 2000px;
+    background-image: url(/sunnyside-agency/resources/images/photos/image-photography.jpg);
+    background-repeat: no-repeat;
+}
+
+.test h3 {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 5px;
+
+    color: #A7AAAD;
+}
+
+.client {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+    text-align: center;
+    width: 1428px;
+    height: 457px;
+    left: 165px;
+    top: 2760px;
+}
+
+.client img {
+    border: #fff;
+    border-radius: 100px;
+    width: 60px;
+    max-width: 100%;
+}
+
+.a {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.128571px;
+
+    color: #5B636D;
+}
+
+.b {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+
+    color: #24303E;
+}
+
+.c {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+
+    text-align: center;
+    letter-spacing: -0.1px;
+
+    color: #A7AAAD;
+}
+
+.agency {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.agency img {
+    max-width: 100%;
+    height: auto;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.foot {
+    background: #90D4C6;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.footer-menu {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    grid-auto-flow: column;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+
+    letter-spacing: -0.128571px;
+
+    color: #458D7E;
+}
+.footer-menu:hover{
+    color: #fff;
+}
+
+.icons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    grid-auto-flow: column;
+    color: #2C7566;
+}
+
+.icons:hover {
+    color: white;
+}
