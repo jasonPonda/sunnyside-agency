@@ -1,15 +1,12 @@
 @import url(https://fonts.google.com/specimen/Barlow);
 @import url(https://fonts.google.com/specimen/Fraunces);
 
-@media (min-width: 600px) {
-    body{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
+*{
+    box-sizing: border-box;
 }
 
 body {
-
-    width: 1440px;
+    max-width: 1440px;
     margin: auto 0px;
     font-size: 18px;
 }
@@ -21,6 +18,13 @@ body {
     background-repeat: no-repeat;
 }
 
+header .downarrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 li {
     list-style: none;
 }
@@ -29,27 +33,25 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1352px;
-    height: 56px;
-    left: 40px;
-    top: 34px;
+  
 }
 
 
 .menu {
     display: flex;
+    padding: 18px 24px;
     gap: 3em;
     font-size: 18px;
     color: #fff;
 }
 
 .contact {
-    border: none;
-    border-radius: 28px;
-    padding: 5px;
-    text-transform: uppercase;
-    color: #000;
     background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding: 5px;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
 }
 
 .contact:hover {
@@ -57,76 +59,72 @@ li {
 }
 
 h1 {
-    position: absolute;
-    width: 750px;
-    height: 69px;
-    left: 344.5px;
-    top: 195px;
-
-    font-family: 'Fraunces 9pt Soft';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 69px;
-    /* identical to box height */
-
-    text-align: center;
-    letter-spacing: 8.75px;
     text-transform: uppercase;
-
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 45px;  
+    letter-spacing: 8.75px;
     color: #FFFFFF;
 }
 
-.double {
+#double {
     display: grid;
-    grid-template-columns: auto auto;
-    text-align: left;
+    grid-template-columns: repeat(3, 600px);
+    grid-template-columns: 1fr 1fr;
 }
 
-.double h2,
+#double>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#double h2,
 h3 {
-    font-family: 'Fraunces 9pt Soft';
-    font-style: normal;
+    font-family: 'Fraunces';
     font-weight: 900;
-    font-size: 40px;
-    line-height: 49px;
     letter-spacing: -0.285714px;
-
     color: #24303E;
 }
 
-.double a {
-    font-family: 'Fraunces 9pt Soft';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 15px;
-    line-height: 25px;
-    /* identical to box height, or 167% */
-
-    letter-spacing: 1px;
+a.learn  {
+    display: inline-block;
     text-transform: uppercase;
-
-    color: #24303E;
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+    font-size: 120%;
+    padding: 0 5px;
 }
 
-.double a:hover {
-    background: #FAD400;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    border-radius: 28px;
+a.learn::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 3s;
 }
 
 .part1 {
-    grid-template-areas:
-        ". a  a ."
-        ". a  a .";
+    
     align-content: flex-start;
     align-self: center;
     justify-self: center;
     width: 445px;
-    height: 285px;
-    left: 165px;
-    top: 958px;
+}
+
+section.audience {
+    align-content: flex-start;
+    align-self: center;
+    justify-self: center;
+    width: 445px;
 }
 
 .part1 p,
@@ -136,13 +134,9 @@ h3 {
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
-    /* or 167% */
-
     letter-spacing: -0.128571px;
-
     color: #808397;
 }
-
 
 .oeuf {
     width: 720px;
@@ -162,74 +156,9 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.audience {
-    height: 445px;
-    left: 830px;
-    top: 1557px;
-}
-
-.graphic {
-    width: 720px;
-    height: 600px;
-    left: 0px;
-    top: 1400px;
+#double>section.graphic {
     background-image: url(/sunnyside-agency/resources/images/photos/image-graphic-design.jpg);
     background-repeat: no-repeat;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.graphic h3,
-.photography h3 {
-    height: 35px;
-    left: 17.4px;
-    right: 17.4%;
-    top: 60%;
-
-    font-family: 'Fraunces 9pt Soft';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 35px;
-    /* identical to box height */
-
-    letter-spacing: -0.2px;
-
-    color: #24554A;
-}
-
-.graphic p,
-.photography p {
-    width: 339px;
-    height: 143px;
-    left: 191px;
-    top: 2398px;
-
-
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 27px;
-    /* or 169% */
-
-
-    letter-spacing: -0.114286px;
-
-    color: #3E7467;
-}
-
-.graph {
-    grid-template-areas:
-        ". a  a ."
-        ". a  a .";
-    align-content: flex-start;
-    align-self: center;
-    justify-self: center;
-    width: 445px;
-    height: 285px;
-    left: 165px;
-    top: 958px;
 }
 
 .photography {
@@ -241,7 +170,36 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.test h3 {
+#double>section.graphic, #double>section.photography {
+   justify-content: flex-end;
+   align-items: center;
+   text-align: center;
+   padding: 5% 25%;
+}
+
+.graphic h3,
+.photography h3 {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.2px;
+    color: #24554A;
+}
+
+.graphic p,
+.photography p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.114286px;
+    color: #3E7467;
+}
+
+.testimonials h3 {
     font-family: 'Fraunces 9pt Soft';
     font-style: normal;
     font-weight: 900;
@@ -269,18 +227,20 @@ h3 {
 }
 
 .client img {
-    border: #fff;
-    border-radius: 100px;
-    width: 60px;
-    max-width: 100%;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
 }
 
 .a {
+    text-align: center;
+    opacity: .65;
+    margin: 50px 0;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
     letter-spacing: -0.128571px;
 
     color: #5B636D;
@@ -322,13 +282,10 @@ h3 {
     height: auto;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+footer{
+    background-color: hsl(168, 34%, 41%);
+    display: grid;
+    align-items: center;
 }
 
 .foot {
@@ -337,6 +294,12 @@ h3 {
 
 .logo-footer {
     text-align: center;
+    margin: 40px 0;
+}
+
+footer>nav>ul {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-menu {
@@ -345,31 +308,36 @@ h3 {
     align-content: center;
     gap: 100px;
     grid-auto-flow: column;
-
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height, or 139% */
-
     letter-spacing: -0.128571px;
-
     color: #458D7E;
 }
-.footer-menu:hover{
-    color: #fff;
-}
 
-.icons {
+.icons{
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 50px;
     grid-auto-flow: column;
+    font-size: 16px;
+    padding: 18px 24px;
+  
     color: #2C7566;
 }
 
-.icons:hover {
-    color: white;
+aside.attribution {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 11px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
